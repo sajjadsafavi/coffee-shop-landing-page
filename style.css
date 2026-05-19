@@ -1,0 +1,256 @@
+/* RESET */
+{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+}
+/* GLOBAL */
+body {
+  font-family: "Changa", sans-serif;
+
+background-color: #f5f5f5;
+  color: #222;
+}
+/* HEADER */
+header{
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+margin: -9px -9px;
+overflow: hidden;
+background-color: #c6b295
+}
+header h1{
+font-size: 32px;
+padding: 0px 34px;
+color: #2c1810;
+font-weight: 700;
+}
+nav{
+display: flex;
+gap: 5px;
+margin: 0px 50px;
+padding: 0px 0px;
+}
+nav a{
+position: relative;
+text-decoration: none;
+color: #222;
+margin-left: 25px;
+font-weight: 500;
+font-size: 16px;
+transition: 0.3s;
+}
+nav a:hover{
+color: #55452e;
+}
+nav a::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: -5px;
+width: 0%;
+height: 2px;
+background-color: #55452e;
+transition: width 0.3s ease;
+}
+nav a:hover::after{
+width: 100%;
+}
+.shape-left{
+position: absolute;
+    left: 20px;
+    top: 24px;
+    width: 57px;
+    opacity: 1.1;
+}
+.shape-right{
+position: absolute;
+    right: 7px;
+    top: 8px;
+    width: 60px;
+    opacity: 1.5;
+}
+
+
+.hero {
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin: 0px -8px;
+    min-height: 90vh;
+    background-color: #c6b295
+}
+.hero-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    flex: 1;
+}
+.hero-right h2{
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-size: 55px;
+    color: #2c1810;
+}
+.hero-right p{
+    font-size: 18px;
+    max-width: 500px;
+    color: #5c5c5c;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.hero-right button{
+    width: fit-content;
+    background-color
+    background-color: #7c7366;
+    color: #2b241a;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 17px 10px;
+    margin: 0px 0px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-right button:hover{
+    color: #c9beae;
+    background-color: #251606;
+    transform: translateY(-3px);
+}
+.hero-left{
+    flex: 1;
+}
+.hero-left img{
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    height: 100%;
+}
+/*CONTAINER*/
+.container{
+width: auto;
+min-height: 250px;
+margin: 15px auto;
+}
+#box-title{
+text-align: center;
+margin-bottom: 60px;
+}
+#box-title h1 {
+display: inline-block;
+font-size: 25px;
+cursor: pointer;
+position: relative;
+margin: 10px auto;
+transition: 0.4s;
+}
+#box-title h1:hover{
+color: #927d60; 
+transform: translateY(-5px);
+letter-spacing: 6px;
+text-shadow: 0 0 12px rgba(196, 155, 99, 0.5);   
+}
+#box-title h1::after{
+content: "";
+position: absolute;
+left: 50%;
+bottom: -5px;
+width: 0%;
+height: 2px;
+background-color: #927d60;
+transition: 0.4s ease;
+transform: translateX(-50%);
+}
+#box-title h1:hover::after{
+width: 100%;
+}
+.services{
+padding: 120px 60px;
+background-color: #f8f5f2;;
+}
+.services-list{
+display: flex;
+justify-content: center;
+gap: 35px;
+flex-wrap: wrap;
+}
+.services-item{
+text-align: center;
+width: 320px;
+background-color: white;
+position: relative;
+border: 1px solid transparent;
+border-radius: 25px;
+overflow: hidden;
+transition: 0.4s;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.services-item:hover{
+transform: translateY(-18px);
+box-shadow: 0 25px 45px rgba(0,0,0,0.18);
+border-color: rgba(196, 155, 99, 0.5);
+}
+.services-item img{
+width: 100%;
+height: 250px;
+object-fit: cover;
+transition: 0.5s;
+}
+.services-item img:hover{
+scale: 1.08;
+}
+.services-item h3 {
+font-size: 28px;
+margin: 25px 20px 18px;
+color: #2c1810;
+}
+.services-item p {
+margin: 0 20px 25px;
+line-height: 1.8;
+color: #666;
+}
+.services-item button{
+position: relative;
+overflow: hidden;
+font-weight: 600;
+letter-spacing: 2px;
+margin: 30px 20px 25px;
+padding: 14px 28px;
+border: none;
+background-color: #c49b63;
+border-radius: 20px;
+color: white;
+cursor: pointer;
+transition: 0.5s ease;
+}
+.services-item button:hover{
+background-color: #2c1810;
+transform: scale(1.15);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.services-item button::before {
+content: "";
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+transition: 0.6s;
+}
+.services-item button:hover::before {
+left: 100%;
+}
+/* NAVIGATION */
+/* TITLES */
