@@ -1,8 +1,19 @@
 /* RESET */
-{
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+*{
 margin:0px;
 padding:0px;
-box-sizing: border-box;
+}
+/* Variables */
+:root{
+--primary-color:rgb(117, 52, 34);
+--secondary-color:rgb(215, 151, 113);
+--accent-color:rgb(176, 91, 59);
+--light-color:rgb(255, 235, 201);
 }
 /* GLOBAL */
 body {
