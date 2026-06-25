@@ -14,6 +14,7 @@ padding:0px;
 --secondary-color:rgb(215, 151, 113);
 --accent-color:rgb(176, 91, 59);
 --light-color:rgb(255, 235, 201);
+--text-dark: rgb(60,35,25);
 }
 /* GLOBAL */
 body {
@@ -28,34 +29,29 @@ position: relative;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0px 20px;
-margin: -9px -9px;
-overflow: hidden;
-background-color: #c6b295
-}
-header h1{
-font-size: 32px;
-padding: 0px 34px;
-color: #2c1810;
-font-weight: 700;
+z-index: 10;
+border-radius: 12px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+background-color: rgba(255,235,201,0.1);
+height: 75px;
+margin: 20px 20px 0px 20px;
+padding: 0px 24px 0px 24px;
 }
 nav{
 display: flex;
-gap: 5px;
-margin: 0px 50px;
-padding: 0px 0px;
+gap: 30px;
+letter-spacing: 0.5px;
 }
 nav a{
 position: relative;
 text-decoration: none;
-color: #222;
-margin-left: 25px;
+color:var(--text-dark);
 font-weight: 500;
 font-size: 16px;
 transition: 0.3s;
 }
 nav a:hover{
-color: #55452e;
+color: var(--accent-color);
 }
 nav a::after{
 content: "";
@@ -64,36 +60,51 @@ left: 0;
 bottom: -5px;
 width: 0%;
 height: 2px;
-background-color: #55452e;
+background-color: var(--accent-color);
 transition: width 0.3s ease;
 }
 nav a:hover::after{
 width: 100%;
 }
-.shape-left{
-position: absolute;
-    left: 20px;
-    top: 24px;
-    width: 57px;
-    opacity: 1.1;
+.logo-icon{
+width: 32px;
 }
-.shape-right{
-position: absolute;
-    right: 7px;
-    top: 8px;
-    width: 60px;
-    opacity: 1.5;
+.header-logo{
+display: flex;
+align-items: center;
+gap: 8px;
 }
-
-
+.header-logo h1{
+font-size: 28px;
+font-weight: 700;
+color: var(--text-dark);
+}
+.header-button{
+background-color: var(--accent-color);
+color: var(--light-color);
+border-radius: 12px;
+border: none;
+font-weight: 600;
+font-size: 16px;
+padding: 15px 20px;
+cursor: pointer;
+transition: 0.3s;
+box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+.header-button:hover{
+background-color:var(--primary-color) ;
+transform: translateY(-3px);
+box-shadow: 0 6px 18px rgba(0, 0, 0, 0.341);
+}
+/* HERO */
 .hero {
-   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 10px;
-    margin: 0px -8px;
-    min-height: 90vh;
-    background-color: #c6b295
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0px 10px;
+margin: 0px -8px;
+min-height: 90vh;
+background-color: #c6b295
 }
 .hero-right{
     display: flex;
