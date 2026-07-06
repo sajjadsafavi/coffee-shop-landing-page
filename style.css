@@ -52,6 +52,7 @@ background-color: #f5f5f5;
 }
 /* HEADER */
 header{
+font-family: "bodoni", sans-serif;
 position: relative;
 display: flex;
 justify-content: space-between;
@@ -102,10 +103,12 @@ display: flex;
 align-items: center;
 gap: 8px;
 }
-.header-logo h1{
-font-size: 28px;
-font-weight: 700;
-color: var(--text-dark);
+.header-logo h1 {
+    font-family: "opensans", fantasy;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: var(--text-dark);
 }
 .header-button {
     background-color: var(--accent-color);
@@ -168,11 +171,11 @@ height: 100%;
 width: 100%;
 }
 .hero-content {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 32px;
-z-index: 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    z-index: 11;
 }
 .hero-container {
     width: 100%;
@@ -243,8 +246,12 @@ pointer-events: none;
     pointer-events: none;
     text-align: left;
     line-height: 1.8;
-    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.444)
-    max-width: 360px;
+    font-family: "opensans", system-ui;
+    font-weight: 400;
+    font-size: 16px;
+    text-shadow: 0 10px 20px rgb(0 0 0 / 76%);
+    letter-spacing: 0.75px;
+    max-width: 685px;
 }
 /*CONTAINER*/
 .container{
@@ -536,21 +543,58 @@ align-items: flex-start;
 /* RESPONSIVE */
 /* Tablet */
 @media (max-width: 992px) {
-
+.navbar{
+    gap: 14px;
 }
+.navbar a {
+    font-weight: 600;
+    font-size: 12px;
+}
+.hero-content{
+    align-items: flex-end;
+    padding-left: 20px;
+}
+.hero-container{
+    padding-bottom: 24px;
+}
+.hero-content p{
+    font-weight: 600;
+    font-size: 15px;
+    width: 360px;
+}
+.hero-content h2{
+    font-size: 36px;
+}
+header {
+    max-height: 62px;
+    border-radius: 8px;
+    padding: 0px 8px 0px 8px;
+    margin: 9px 12px 9px 12px;
+}
+.header-button{
+    font-weight: 500;
+    font-size: 14px;
+}
+.hero{
+    min-height: 520px;
+}
+}
+
 /* Large Mobile */
 @media (max-width:768px) {
 header{
 z-index: 101;
 }
-.hero{
+.hero {
 z-index: 1;
+min-height: 460px;
 }
 .navbar{
 display: flex;
 flex-direction: column;
 padding: 80px 30px;
-gap: 20px;
+font-family: "opensans", system-ui;
+gap: 28px;
 position: fixed;
 right: -330px;
 height: 100vh;
@@ -590,5 +634,13 @@ display: none;
 .menu-hamburger{
 display: block;
 z-index: 102;
+}
+.hero-content {
+    padding-left: 12px;
+    align-items: center;
+    gap: 36px;
+}
+.hero-container {
+    padding-bottom: 24px;
 }
 }
