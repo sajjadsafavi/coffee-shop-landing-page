@@ -10,27 +10,26 @@ padding:0px;
 }
 @font-face {
     font-family: "opensans";
-    src: url("/font/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
+    src: url("font/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: "opensans";
-    src: url("/font/OpenSans-Italic-VariableFont_wdth\,wght.ttf") format("truetype");
+    src: url("font/OpenSans-Italic-VariableFont_wdth\,wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: italic;
 }
 @font-face {
     font-family: "Bodoni";
-    src: url("/font/BodoniModaSC-VariableFont_opsz\,wght.ttf") format("truetype");
+    src: url("font/BodoniModaSC-VariableFont_opsz\,wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Bodoni";
-    src: url("/font/BodoniModaSC-Italic-VariableFont_opsz\,wght.ttf") format("truetype");
+    src: url("font/BodoniModaSC-Italic-VariableFont_opsz\,wght.ttf") format("truetype");
     font-weight: 100 900;
     font-style: italic;
 }
@@ -75,6 +74,7 @@ letter-spacing: 0.5px;
 }
 .navbar a{
 position: relative;
+font-family: 'opensans';
 text-decoration: none;
 color:var(--text-dark);
 font-weight: 500;
@@ -106,7 +106,7 @@ align-items: center;
 gap: 8px;
 }
 .header-logo h1 {
-    font-family: "opensans", fantasy;
+    font-family: 'Bodoni';
     font-size: 28px;
     font-weight: 900;
     letter-spacing: 1.5px;
@@ -238,6 +238,7 @@ transform 0.4s;
 }
 .hero-content h2 {
 font-weight: 900;
+font-family: 'Bodoni';
 text-shadow: 0 6px 12px rgba(0, 0, 0, 0.511);
 font-size: 48px;
 color: var(--text-light);
@@ -267,7 +268,7 @@ margin-bottom: 30px;
 }
 .box-title h1 {
     display: inline-block;
-    font-family: "opensans", fantasy;
+    font-family: 'Bodoni';
     letter-spacing: 1.5px;
     color: var(--text-dark);
     font-size: 30px;
@@ -376,6 +377,7 @@ scale: 1.03;
 }
 .products-item h3 {
     font-size: 30px;
+    font-family: 'Bodoni';
     font-weight: 700;
     letter-spacing: 0.5px;
     margin: 8px 0px 8px 0px;
@@ -487,7 +489,7 @@ margin-bottom: 18px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(388%) hue-rotate(349deg) brightness(100%) contrast(100%);
 }
 .footer-brand h2 {
-    font-family: "opensans", fantasy;
+    font-family: 'Bodoni';
     font-size: 32px;
     font-weight: 500;
     letter-spacing: 0.7px;
