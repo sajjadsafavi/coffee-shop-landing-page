@@ -588,6 +588,26 @@ color: var(--secondary-color);
     flex-direction: column;
     gap: 20px;
 }
+.phone-footer{
+    width: 20px;
+    height: 20px;
+    color: var(--secondary-color);
+}
+.mail-footer{
+    width: 20px;
+    height: 20px;
+    color: var(--secondary-color);
+}
+.location-footer{
+    width: 20px;
+    height: 20px;
+    color: var(--secondary-color);
+}
+.clock-footer{
+    width: 20px;
+    height: 20px;
+    color: var(--secondary-color);
+}
 .footer-newsletter{
 display: flex;
 flex-direction: column;
