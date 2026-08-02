@@ -20,7 +20,7 @@ This project was created as my first portfolio project to practice turning a Fig
 
 ## 🌐 Live Demo
 
-> https://YOUR-GITHUB-PAGES-LINK
+[> https://YOUR-GITHUB-PAGES-LINK](https://sajjadsafavi.github.io/coffee-shop-landing-page/)
 
 ---
 
