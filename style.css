@@ -154,7 +154,7 @@ border: none;
     position: relative;
     justify-content: end;
     align-items: center;
-    background-image: url(images/hero.jpg);
+    background-image: url(assets/images/hero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -386,7 +386,7 @@ scale: 1.03;
 .products-item p {
     margin: 4px 2px 4px 2px;
     padding: 4px 32px;
-    font-family: revert;
+    font-family:'bedoni';
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
@@ -823,6 +823,14 @@ z-index: 101;
 z-index: 1;
 min-height: 460px;
 }
+.header-logo h1 {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+.logo-icon {
+    width: 28px;
+}
 .navbar{
 display: flex;
 flex-direction: column;
@@ -870,22 +878,42 @@ display: block;
 z-index: 102;
 }
 .hero-content {
-    padding-left: 12px;
-    align-items: center;
-    gap: 36px;
+        padding: 0px 0px 24px 24px;
+        align-items: end;
+        gap: 24px;  
+}
+.hero-content h2 {
+        font-size: 28px;
+}
+.hero-content p {
+        font-weight: 400;
+        font-size: 12px;
+        width: 360px;
+}
+.hero-button {
+    font-size: 15px;
+    padding: 14px 24px;
+    border-radius: 24px;
 }
 .hero-container {
     padding-bottom: 24px;
 }
+.box-title h1 {
+    font-size: 24px;
+}
+.products {
+    padding: 16px 24px;
+    background-color: #f8f5f2;
+}
 .products-item{
-    max-width: 280px;
+    max-width: 250px;
     padding: 8px 4px;
 }
-.products-item button{
-    font-size: 16px;
-    font-weight: 800;
-    margin: 8px 24px 8px 24px;
-    padding: 16px 0px;
+.products-item button {
+        font-size: 16px;
+        font-weight: 800;
+        margin: 16px 18px 16px 18px;
+        padding: 16px 0px;
 }
 .products-item p {
     margin: 2px 1px 2px 1px;
@@ -895,10 +923,11 @@ z-index: 102;
     line-height: 1.6;
     letter-spacing: 0.2px;
 }
-.product-meta{ 
-    padding: 6px 3px;
-    margin: 2px 32px;
-    justify-content: space-between;
+.product-meta {
+        padding: 5px 12px;
+        margin: 2px 24px;
+        border-radius: 15px;
+        justify-content: space-between;
 }
 .product-rating{
     font-size: 12px;
@@ -914,9 +943,17 @@ z-index: 102;
     height: 120px;
     object-fit: cover;
 }
+.footer-main h3 {
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: 600;
+}
 .footer-main {
         grid-template-columns: 1fr 1fr;
-        gap: 36px;
+        gap: 32px;
+}
+.site-footer {
+    padding: 44px 12px 24px;
 }
 .footer-social {
         gap: 12px;
